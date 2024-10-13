@@ -1,0 +1,27 @@
+{
+  "name": "@examples/vuejs-core",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.12.1",
+  "scripts": {
+    "dev": "tsx setup/start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "vue": "/path/to/local/vue-vapor"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.7.3",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.5",
+    "@vitejs/plugin-vue": "https://pkg.pr.new/@vitejs/plugin-vue@e3c5ce5",
+    "@vue/tsconfig": "^0.5.1",
+    "eslint": "^9.11.1",
+    "tsx": "^4.19.1",
+    "vite": "^5.0.2",
+    "vite-hyper-config": "^0.1.1",
+    "vite-node": "^0.34.6",
+    "vite-plugin-inspect": "^0.7.42"
+  }
+}

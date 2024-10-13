@@ -1,0 +1,16 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@vue/compat": ["/path/to/local/vue-vapor/packages/vue-compat/src"],
+      "@vue/vapor": ["/path/to/local/vue-vapor/packages/vue-vapor/src"],
+      "@vue/*": ["/path/to/local/vue-vapor/packages/*/src"],
+      "vue": ["/path/to/local/vue-vapor/packages/vue/src"],
+      "vue/vapor": ["/path/to/local/vue-vapor/packages/vue/vapor"]
+    }
+  },
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "exclude": ["src/**/__tests__/*"]
+}
